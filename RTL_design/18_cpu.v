@@ -222,11 +222,14 @@ module cpu(
 
     assign B = (ealusrc) ? eimmext : ewritedata;
 
+    wire zero;
+
     alu alu(
         .ealuctrl(ealuctrl),
         .A(A),
         .B(B),
-        .resulte(resulte)
+        .resulte(resulte),
+        .zero(zero)
     );
 
     wire [31:0] epctarget;
