@@ -88,7 +88,7 @@ Pipeline registers are placed between each stage to store intermediate results a
 
 - **Verilog HDL**
 - **Xilinx Vivado**
-- **Basys3 FPGA (Artix-7)**
+- **Basys3 FPGA**
 
 ---
 
