@@ -83,12 +83,12 @@ Pipeline registers are placed between each stage to store intermediate results a
 ---
 ## The supported instruction list is roughly:
 
-add, sub, and, or, slt (R-type, opcode 0110011)
-addi, andi, ori, slti (I-type ALU, opcode 0010011)
-lw (load word)
-sw (store word)
-beq (branch on equal)
-jal (unconditional jump and link)
+- add, sub, and, or, slt (R-type, opcode 0110011)
+- addi, andi, ori, slti (I-type ALU, opcode 0010011)
+- lw (load word)
+- sw (store word)
+- beq (branch on equal)
+- jal (unconditional jump and link)
 
 ---
 
