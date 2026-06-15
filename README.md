@@ -27,30 +27,39 @@ The processor successfully executes a **Fibonacci program**, validating:
 
 ## Pipeline Architecture
 
-The processor follows the standard **5-stage RISC-V pipeline**:
+```text
+IF → ID → EX → MEM → WB
+```
 
-1. **Instruction Fetch (IF)**  
-   - Fetch instruction from instruction memory  
+### IF – Instruction Fetch
 
-2. **Instruction Decode (ID)**  
-   - Decode instruction  
-   - Read registers from register file  
+* Instruction cache access
+* Branch prediction using BTB
 
-3. **Execute (EX)**  
-   - Perform ALU operations  
-   - Compute branch targets  
+### ID – Instruction Decode
 
-4. **Memory Access (MEM)**  
-   - Read/write data memory  
+* Instruction decoding
+* Register file access
 
-5. **Write Back (WB)**  
-   - Write results back to register file  
+### EX – Execute
 
+* ALU operations
+* Branch evaluation
+* Target address generation
+
+### MEM – Memory Access
+
+* Data cache access
+* Load and store operations
+
+### WB – Write Back
+
+* Register write-back
 Pipeline registers are placed between each stage to store intermediate results and maintain proper synchronization.
 
 ---
 
-## Key Features
+## Features
 
 - 32-bit **RISC-V pipelined processor**
 - **5-stage pipeline (IF, ID, EX, MEM, WB)**
