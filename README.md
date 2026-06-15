@@ -109,9 +109,3 @@ Pipeline registers are placed between each stage to store intermediate results a
 - Superscalar or out-of-order extensions
 
 ---
-
-## Author
-
-**Yashmith Gali**  
-BTech ECE, IIT Bhubaneswar
-<img width="960" height="720" alt="image" src="https://github.com/user-attachments/assets/76cd2f9e-b202-4790-bab1-525edb18fbbe" />
