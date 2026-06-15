@@ -2,9 +2,9 @@ module alu (
     input [2:0] ealuctrl ,
     input [31:0] A ,
     input [31:0] B ,
-    output reg [31:0] resulte  
+    output reg [31:0] resulte,
+    output zero           
 );
-
     always @ (*) begin 
         case (ealuctrl) 
             3'b000 : resulte = A + B ;
@@ -15,5 +15,7 @@ module alu (
             default : resulte = 32'b0 ;
         endcase
     end
+
+    assign zero = (resulte == 32'b0);  
 
 endmodule
